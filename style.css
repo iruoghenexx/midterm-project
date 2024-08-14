@@ -1,0 +1,290 @@
+body {
+  text-align: left;
+  background: #fff;
+  background-size: auto;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+h2{
+font-size: 4rem;
+color: #ee2f5b;
+}
+:root{
+  --color-primary: #EE2F5B;
+  --color-secondary: #F4F4F4;
+  --color-text: #F4F4F4;
+  --color-7e4e46cc: #7A7A7A;
+  --color-1d522ab5: #4054B2;
+  --color-6f66f7cf: #23A455;
+  --color-172f6628: #000;
+  --color-60fea42d: #FFF;
+  --font-family: "Criteria";
+  --font-size: 5rem;
+  --font-weight: 600;
+  --line-height: 1.2em;
+  --secondary-font-size: 4.3rem;
+  --secondary-font-weight: 600;
+  --secondary-line-height: 1.2em;
+  --text-font-family: "Agrandir";
+  --text-font-size: 1rem;
+  --text-font-weight: 400;
+  --text-line-height: 1.5em;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ol, ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+sup{
+  color: white;
+  font-size: 3rem;
+}
+h1{
+  color: var(--e-global-color-a83c27c);
+  font-family: "Clash Display", Sans-serif;
+  font-size: 7.2rem;
+  font-weight: 600;
+  line-height: 1em;
+}
+#nav{
+  height: 100vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/1.webp);
+  animation-name: background-img;
+  animation-duration: 10s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+@keyframes background-img{
+    0%{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/2.webp); 
+    }
+    25%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/3.webp);  
+    }
+    50%{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/6.webp);
+    }
+    75%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/7.webp);
+    }  
+}
+.heloo{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  opacity: 1px;
+}
+.nav-link{
+  font-family: var(--text-font-family);
+  font-weight: var(--text-font-weight);
+  color: var(--color-text);
+}
+.btns{
+  color: white;
+  background: linear-gradient(to right, #FD4E33, #E02870);
+  padding: 18px 45px;
+  margin-left: 50px;
+  border: none
+}
+.btn:hover {
+  background: linear-gradient(to right, #E02870, #FD4E33);
+  color: white;
+}
+ .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+  border: none
+}
+@media(max-width:1201px){ 
+  .btns{
+    padding: 15px 30px;
+    margin-left: 10px;
+  }
+  .navbar-brand{
+    margin-right: 0px
+  }
+  #nav{
+    height: fit-content;
+  }
+ }
+.hero > .anticipate{
+  color: var(--color-text);
+  font-family: var(--text-font-family);
+  font-size: var(--text-font-size);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 30px;
+  margin-bottom: 20px
+}
+.hero h1{
+  color: var(--color-secondary);
+  font-family: "Clash Display", Sans-serif;
+  font-size: 7.2rem;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+}
+.hero p{
+  text-align: center;
+  color: var(--color-text);
+  font-family: var(--text-font-family);
+  font-weight: var(--secondary-font-weight);
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+.sponsor{
+  display: flex;
+  justify-content: center;
+}
+.sponsor button{
+  color: white;
+  font-family: sans-serif;
+  font-weight: var(--secondary-font-weight);
+  background-color: transparent;
+  padding: 20px 40px;
+  border: 1px solid #676577;
+}
+#buyticket-btn:hover{
+  color: #08003C;
+}
+.sponsor-self{
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-weight: bold;
+padding-left: 20px;
+}
+.gif{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#buyticket-btn{
+background-color: transparent;
+border: 1px solid #08003C;
+border-radius: 0%;
+padding: 10px;
+outline: none;
+font-weight: bold;
+color: white;
+margin-right: 30px;
+}
+.first-sec{
+background-color: #08003c;
+}
+.first-sec-con{
+color: white;
+width: 90%;
+height: 65%;
+}
+.sec-d-1{
+  width: 23%;
+  height: 100%;
+}
+.sec-d-2{
+  width: 23%;
+  height: 100%;
+}
+.sec-d-3{
+  width: 23%;
+  height: 100%;
+}
+.sec-d-4{
+  width: 23%;
+  height: 100%;
+}
+.first-sec{
+  height: 40vh;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:767px){
+  .hero h1{
+    font-size: 3.50rem;
+  }
+  .hero p{
+  /* font-family: ; */
+  font-size: 14px;
+  }
+  .sponsor-con{
+    border: 2px solid green;
+  }
+  .sponsor-sub-con{
+    border: 2px solid white;
+    height: fit-content;
+  }
+  #nav{
+    height: fit-content;
+  }
+  #buyticket-btn{
+    margin-right: 0%;
+    }
+    .sec-d-1{
+      width: 100%;
+    }
+    .sec-d-2{
+      width: 100%;
+    }
+    .sec-d-3{
+      width: 100%;
+    }
+    .sec-d-4{
+      width: 100%;
+    }
+    .first-sec{
+      height: 40vh;
+      }
+}
+
+@media(max-width:991px) and (min-width:768px){
+  .sec-d-1{
+    width: 40%;
+  }
+  .sec-d-2{
+    width: 40%;
+  }
+  .sec-d-3{
+    width: 40%;
+  }
+  .sec-d-4{
+    width: 40%;
+  }
+  .first-sec-con{
+    gap: 20px;
+    height: fit-content;
+    }
+    .first-sec{
+      height: fit-content;
+      }
+}
