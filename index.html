@@ -18,12 +18,13 @@
       <div class="heloo">
         <nav class="navbar navbar-expand-lg d-flex justify-content-center">
           <div class="container">
-            <a class="navbar-brand" href="#"><img src="images/thanks-banner-1.png" alt="" width="80px" style="margin-right: 200px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="images/thanks-banner-1.png" alt="" width="80px" style="margin-right: 200px;"></a>           
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item px-1">
                   <a class="nav-link" aria-current="page" href="#" style="color: #F35539;">HOME</a>
                 </li>
@@ -39,7 +40,7 @@
                 <li class="nav-item px-1">
                   <a class="nav-link" href="#">VOLUNTEER</a>
                 </li>
-              </ul>
+              </ul>              
               <div>
                 <img src="./images/search-icon.png" alt="" width="25px">
                 <button class="btns">
@@ -49,7 +50,10 @@
             </div>
           </div>
         </nav>
-        <!-- Hero Section -->
+        <div class="the-single-search-icon d-lg-none">
+          <img src="./images/search-icon.png" alt="" width="25px">
+        </div>
+        
         <div class="container">
           <div class="row">
             <div class="col-12 hero">
@@ -59,53 +63,110 @@
                 Theme: Evolve | 19th October, 2024 | Landmark Event Center, Owerri
               </p>
             </div>
-            <div class="container mt-4 ">
-              <!-- Use a row to structure the grid system -->
-              <div class="row justify-content-center">
-                  <div class="col-12 col-md-10 d-flex flex-column flex-md-row align-items-center justify-content-center">
-                      <!-- Full-width button on mobile, inline on larger screens -->
-                      <div class="mb-3 mb-md-0">
-                          <button class=" btn-primary btn-block" id="buyticket-btn">BUY TICKET</button>
-                      </div>
-                      <!-- The rest of the content will go next to the button on larger screens -->
-                      <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
-                          <div class="d-flex align-items-center mb-3 mb-md-0">
-                              <div style=" border-radius: 100px; display: flex; justify-content: space-between;" class="gif">
-                                  <img src="images/icons8-play (2).gif" alt="Play">
-                              </div>
-                              <div style=" padding-left: 30px;" class="sponsor-self">
-                                  SPONSOR
-                              </div>
-                          </div>    
-                      </div>
+            <div class="container mt-4">
+              <div class="row justify-content-center gif-buyticket-row">
+                <div class="col-12 col-md-10 d-flex flex-column flex-md-row align-items-center justify-content-center gif-buyticket-con">
+                  <div class="mb-3 mb-md-0">
+                    <button class="btn-primary btn-block" id="buyticket-btn">BUY TICKET</button>
                   </div>
+                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+                    <div class="d-flex align-items-center mb-3 mb-md-0">
+                      <div style="border-radius: 100px; display: flex; justify-content: space-between;" class="gif">
+                        <img src="images/icons8-play (2).gif" alt="Play">
+                      </div>
+                      <div style="padding-left: 30px;" class="sponsor-self">
+                        SPONSOR
+                      </div>
+                    </div>    
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </nav>  
+    
+    
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasTopLabel" style="background-color: transparent;">Menu</h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SPONSOR</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">VOLUNTEER</a></li>
+        </ul>
+      </div>
+    </div>
   </header>
-  <section style="border: 2px solid red; display: flex; justify-content: center; align-items: center;" class="container-fluid first-sec">
-    <div class="first-sec-con row gap-4 col-md-9 mx-auto" style="border: 2px solid red; display: flex; justify-content: center;">
-      <div class="d-flex flex-column align-items-center justify-content-center border border-success sec-d-1 col-lg-3 col-md-6 col-sm-12">
+  <section style="display: flex; justify-content: center; align-items: center;" class="container-fluid first-sec">
+    <div class="first-sec-con row gap-4 col-md-9 mx-auto" style="display: flex; justify-content: center; margin-top: 60px;">
+      <div class="d-flex flex-column align-items-center justify-content-center border border-light sec-d-1 col-lg-3 col-md-6 col-sm-12">
         <h2>5,332</h2>
         <p>Attendees</p>
       </div>
-      <div class="d-flex flex-column align-items-center justify-content-center border border-success sec-d-2 col-lg-3 col-md-6 col-sm-12">
+      <div class="d-flex flex-column align-items-center justify-content-center border border-light sec-d-2 col-lg-3 col-md-6 col-sm-12">
         <h2>150</h2>
         <p>Small Businesses</p>
       </div>
-      <div class="d-flex flex-column align-items-center justify-content-center border border-success sec-d-3 col-lg-3 col-md-6 col-sm-12">
+      <div class="d-flex flex-column align-items-center justify-content-center border border-light sec-d-3 col-lg-3 col-md-6 col-sm-12">
         <h2>2</h2>
         <p>Cities</p>
       </div>
-      <div class="d-flex flex-column align-items-center justify-content-center border border-success sec-d-4 col-lg-3 col-md-6 col-sm-12">
-        <h2>500<sup>+</sup></h2>
+      <div class="d-flex flex-column align-items-center justify-content-center border border-light sec-d-4 col-lg-3 col-md-6 col-sm-12">
+        <h2>500<sup class="upplus">+</sup></h2>
         <p>Volunteers</p>
       </div>
     </div>
   </section>
+  <section class="about-smfest-sec">
+    <div class="about-smfest-con">
+      <div class="about-smfest-divone" style="display: flex; flex-direction: column; justify-content: center; border: 2px solid white;">
+        <h2 style=" font-size: 1rem;" class="about-it">ABOUT SMFEST</h2>
+        <h3 style=" color: white;" class="smFest">SMFest?</h3>
+        <div  class="explained-first">It is a platform that teaches
+           its audience how to leverage the power
+            of technology, social media, and innovation 
+            to advance their businesses,
+             brands, and causes, by providing ideas, exposure,
+           and insights that help people
+            and businesses understand how to explore
+             all the advantages of digitalization.</div>
+        <div  class="explained-second">In this 2024 edition, business owners, marketers, 
+           and idea boomers will learn how to unlock the full
+            promise of digital opportunity to drive the future 
+          of the industry, bring narrative and customer engagement
+           to new realms, and scale business/idea results.</div>
+           <div class="read-more-about"><button class="read-more-btn">read more</button></div>
+      </div>
+      <div class="about-smfest-divtwo " style="display: flex; flex-direction: column; justify-content: center">
+        <div class="about_border">
+          <div class="years-div">
+            <div class="years-div-one"><div class="big-fo">4 <sup style="font-size: 1.50rem; color: #F35539;" class="th">th</sup></div></div>
+            <div class="years-div-two">Years Of Excellence</div>
+          </div>
+          <div class="about_bg">
+            <img src="./images/about-smfest-2webp.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="why-chose-us-section">
+    <div class="why-chose-us-container">
+      <div>
+        <div>
+          <img src="images/DSC_9591-copy-200x300.jpg" alt="">
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </section> -->
   
 
 

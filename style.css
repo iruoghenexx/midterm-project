@@ -61,6 +61,7 @@ h1{
   background-repeat: no-repeat;
   background-size: cover; 
 }
+
 @keyframes background-img{
     0%{
         background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/2.webp); 
@@ -114,6 +115,12 @@ h1{
   #nav{
     height: fit-content;
   }
+  .first-sec{
+    height: fit-content;
+    }
+    .gif-buyticket-row{
+      height: fit-content;
+    }
  }
 .hero > .anticipate{
   color: var(--color-text);
@@ -155,6 +162,9 @@ h1{
 }
 #buyticket-btn:hover{
   color: #08003C;
+}
+.offcanvas-top{
+  background: linear-gradient(to top, #E02870, #FD4E33);
 }
 .sponsor-self{
 display: flex;
@@ -206,14 +216,127 @@ height: 65%;
 }
 .first-sec{
   height: 40vh;
+  display: flex;
+  justify-content: center;
   }
+.about-smfest-sec{
+  background-color: #08003C;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.about-smfest-con{
+  width: 87%;
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  align-items: center;
+  position: relative;
+}
+.about-smfest-divone{
+  width: 50%;
+  padding-right: 70px;
+  /* height: 70%; */
+  gap: 20px;
+}
+.about-smfest-divtwo{
+  width: 50%;
+  border: 1px solid purple;
+  /* height: 200vh; */
+}
+.about_border{
+  border: 4px solid #E02870;
+  height: 100vh;
+  width: 100%;
+  border-radius: 5px;
+  /* position: relative; */
+}
+.about_bg{
+  /* background-image: url(./images/about-smfest-2webp.webp); */
+  /* height: 80vh; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+}
+.smFest{
+  font-family: "Clash Display";
+  font-weight: 900;
+  font-size: 4rem;
+}
+.about-it{
+  letter-spacing: 8px;
+  font-size: 4px;
+}
+.about_bg img{
+  width: 90%;
+  height: 650px;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+.explained-first{
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Agrandir";
+}
+.explained-second{
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Agrandir";
+}
+.read-more-about{
+/* border: 2px solid red; */
+position: absolute;
+bottom: 4px;
+}
+.read-more-btn{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 500;
+  padding: 15px 35px;
+  text-transform: uppercase;
+}
+.years-div{
+background-color: #000;
+width: fit-content;
+padding: 10px 50px;
+border: 1px solid white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: absolute;
+z-index: 5;
+bottom: 40px;
+right: -90px;
+}
+.years-div-one{
+font-family: sans-serif;
+text-transform: uppercase;
+}
+.big-fo{
+  font-size: 5rem;
+  font-weight: 500;
+  font-family: "Clash Display";
+}
 
-
-
-
-
-
-
+.years-div-one h1{
+}
+.years-div-two{
+font-weight: 900;
+font-family: "Agrandir";
+width: 80px;
+}
+.why-chose-us-section{
+  background-color: green;
+  
+}
 
 
 
@@ -231,11 +354,11 @@ height: 65%;
 
 @media(max-width:767px){
   .hero h1{
-    font-size: 3.50rem;
+    font-size: 4rem;
   }
   .hero p{
   /* font-family: ; */
-  font-size: 14px;
+  font-size: 1rem;
   }
   .sponsor-con{
     border: 2px solid green;
@@ -247,24 +370,205 @@ height: 65%;
   #nav{
     height: fit-content;
   }
+  .gif-buyticket-row{
+    height: fit-content;
+  }
+  .gif-buyticket-con{
+    /* border: 2px solid red; */
+  }
   #buyticket-btn{
     margin-right: 0%;
+    font-size: 1.20rem;
     }
-    .sec-d-1{
-      width: 100%;
+    .sponsor-self{
+      font-size: 1.20rem;
+      padding-left: 0px;
     }
-    .sec-d-2{
+    .sec-d-1, .sec-d-2, .sec-d-3, .sec-d-4 {
       width: 100%;
+      font-size: 1.10rem;
+      font-weight: 500;
+      font-family: "Clash Display", Sans-serif;
     }
-    .sec-d-3{
-      width: 100%;
+    .sec-d-1 >h2{
+      font-size: 2rem;
+      letter-spacing: 1px;
+      padding: 10px 0px;
+      padding-bottom: 0px;
+      /* border: 2px solid red; */
+    }
+    .sec-d-2 >h2{
+      font-size: 2rem;
+      letter-spacing: 1px;
+      padding: 10px 0px;
+      padding-bottom: 0px;
+      /* border: 2px solid red; */
+    }
+    .sec-d-3 >h2{
+      font-size: 2rem;
+      letter-spacing: 1px;
+      padding: 10px 0px;
+      padding-bottom: 0px;
+      /* border: 2px solid red; */
+    }
+    .sec-d-4 >h2{
+      font-size: 2rem;
+      letter-spacing: 1px;
+      padding: 10px 0px;
+      padding-bottom: 0px;
+      /* border: 2px solid red; */
+    }
+    .upplus{
+      position: absolute;
+      top: 17px;
+      font-size: 18px;
     }
     .sec-d-4{
-      width: 100%;
+      position: relative;
     }
     .first-sec{
-      height: 40vh;
+      height: fit-content;
       }
+      .heloo{
+        height: fit-content;
+        padding-bottom: 60px;
+        position: relative;
+      }
+      .the-single-search-icon{
+        position: absolute;
+        left: 50%;
+        top: 20px;
+      }
+      .about-smfest-divone{
+        width: 100% 
+      }
+        .about-smfest-divtwo{
+          width: 100%;
+          padding-bottom: 120px;
+          padding-top: 0px;
+          margin-top: 0px;
+        }
+
+        .about-smfest-con{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          align-items: center;
+          margin-top: 140px;
+          margin-bottom: 100px;
+        }
+        .about_bg img{
+          width: 100%;
+          height: 350px;
+          position: absolute;
+          top: 35px;
+          right: 18px;
+        }
+        
+         .about_border{
+         border: 5px solid #E02870;
+         height: 55vh;
+         width: 100%;
+         border-radius: 8px;
+         /* position: relative; */
+        }
+        .about-smfest-divone{
+          width: 100%;
+          padding-right: 0px;
+          margin-top: 80px;
+          }
+          .explained-first{
+            font-size: 15px;
+            font-weight: 700;
+            font-family: "Agrandir";
+          }
+          .explained-second{
+            font-size: 15px;
+            font-weight: 700;
+            font-family: "Agrandir";
+          }
+          .about-smfest-sec{
+            padding-bottom: 80px;
+          }
+          .about-smfest-con{
+            /* height: 230vh; */
+          }
+          .smFest{
+            font-family: "Clash Display";
+            font-weight: 900;
+            font-size: 2.20rem;
+          }
+          h2{
+            letter-spacing: 8px;
+            font-size: 3px;
+          }
+          .years-div{
+            background-color: #000;
+            width: fit-content;
+            padding: 0px 60px;
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 5;
+            }
+            .years-div-one{
+            font-family: sans-serif;
+            text-transform: uppercase;
+            }
+            
+            .years-div-one h1{
+
+            }
+            .big-fo{
+              font-size: 3rem;
+              font-weight: 500;
+              font-family: "Clash Display";
+            }
+            .years-div-two{
+            font-weight: 900;
+            font-family: "Agrandir";
+            padding: 0;
+            }
+            .read-more-about{
+              /* border: 2px solid red; */
+              position: absolute;
+              /* background-color: #000; */
+              bottom: -90px;
+              z-index: 10;
+              margin-bottom: -30px;
+              }
+              .read-more-btn{
+                background-color: transparent;
+                border: 2px solid white;
+                color: white;
+                font-weight: 500;
+                padding: 10px 30px;
+                text-transform: uppercase;
+              }
+              .years-div-one.h1{
+                font-size: 2rem;
+              }
+               .years-div{
+                background-color: #000;
+                width: fit-content;
+                /* padding: 10px 30px; */
+                border: 1px solid white;
+                display: flex;
+                /* flex-direction: column; */
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                z-index: 5;
+                top: 350px;
+                right: -20px;
+                height: fit-content;
+                }
+
+          
 }
 
 @media(max-width:991px) and (min-width:768px){
@@ -287,4 +591,29 @@ height: 65%;
     .first-sec{
       height: fit-content;
       }
+      .heloo{
+        height: fit-content;
+        padding-bottom: 60px;
+        position: relative;
+      }
+      .the-single-search-icon{
+        position: absolute;
+        left: 50%;
+        top: 20px;
+      }
+      .about-smfest-divone{
+        width: 100% }
+        .about-smfest-divtwo{
+          width: 100%;
+        }
+        .about-smfest-con{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          align-items: center;
+          margin-top: 200px;
+          margin-bottom: 0px;
+        }
+
 }
